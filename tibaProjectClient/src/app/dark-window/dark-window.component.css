@@ -1,0 +1,10 @@
+.dark_inside{
+    min-height: 350px;
+    width: 600px;
+    background-color: white;
+    border:2px solid orangered;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

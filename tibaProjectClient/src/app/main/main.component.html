@@ -1,0 +1,23 @@
+<main class="container-fliud">
+    <div class="container">
+      <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Info</th>
+              <th scope="col">Category</th>
+              <th scope="col">Date</th>
+              <th scope="col">Edit</th>
+              <th scope="col">Del</th>
+            </tr>
+          </thead>
+      </table>
+      <table class="table table-striped border">
+          <tbody>
+              <tr *ngFor="let item of arrList">
+                  <app-task-item (del) = "del($event)" (edit)="edit($event)" [item] = "item"></app-task-item>
+              </tr>
+          </tbody>
+      </table>
+    </div>
+</main>

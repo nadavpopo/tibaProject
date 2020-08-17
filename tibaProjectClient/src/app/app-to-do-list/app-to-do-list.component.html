@@ -1,0 +1,13 @@
+<div>
+    <div id="id_dark" class="d-none">
+        <app-dark-window (closeWindow) = "closeWindow()" (editTaskApi)="editTaskApi($event)" [infoWindow] = "infoWindow" [catWindow] = "catWindow" [idWindow] = "idWindow"></app-dark-window>
+    </div>
+    <app-header></app-header>
+    <app-nav (add) = "addTask($event)" (delAllTask) = "delAllTask()" (sortList) = "sortList($event)"></app-nav>
+    <span *ngIf="arrList.length > 0;">
+        <app-main [arrList] = "arrList" (delTask) = "delTask($event)" (editTask) = "editTask($event)"></app-main>
+    </span>
+    <span *ngIf="arrList.length < 1;">
+        <app-empty></app-empty>
+    </span>
+</div>

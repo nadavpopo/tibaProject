@@ -1,0 +1,29 @@
+<div class="dark_inside p-2 rounded">
+    <div class="col">
+        <h4 class="display-4">Edit task</h4>
+        <div class="row mt-5">
+            <div class="col-3">
+                <h4 class="mr-3">Info</h4>
+            </div>
+            <div class="col-9">
+                <input [(ngModel)]="info" type="text" class="form-control"> 
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-3">
+                <h4 class="mr-3">Cat</h4>
+            </div>
+            <div class="col-9">
+                <select class="form-control" [(ngModel)]="cat">
+                    <option value={{cat}}>{{cat}}</option>
+                    <option value="Home">Home</option>
+                    <option value="Work">Work</option>
+                    <option value="Food">Food</option>
+                    <option value="Sport">Sport</option>
+                </select>
+            </div>
+        </div>
+        <button class="btn btn-outline-success mr-4" (click)="editApi()">Edit</button> 
+        <button class="btn btn-outline-danger my-4" (click)="cencel()">Cencel</button> 
+    </div>    
+</div>
