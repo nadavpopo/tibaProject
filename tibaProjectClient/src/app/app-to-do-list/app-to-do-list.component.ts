@@ -11,7 +11,8 @@ import { localizedString } from '@angular/compiler/src/output/output_ast';
 
 export class AppToDoListComponent implements OnInit
 {
-  myUrl: string = "http://localhost:3000/task";
+   // myUrl: string = "http://localhost:3000/task";
+  myUrl: string = "https://tibe-project.herokuapp.com/task";
   arrList: Task [] = [];
   infoWindow: string;
   catWindow: string;
